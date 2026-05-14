@@ -9,28 +9,26 @@ Repositori ini menyatukan seluruh proyek perencanaan dan pengerjaan dalam satu k
 
 ## 📂 Struktur Direktori
 
-STG-Project/
+~/STG_UNIFIED/stg-project/
 │
-├── planning/                # Folder perencanaan
+├── planning/                # Perencanaan proyek
 │   ├── roads-bridges/       # Perencanaan jalan & jembatan
 │   ├── data-center/         # Perencanaan data center
 │   ├── ecommerce/           # Perencanaan e-commerce
 │   └── ...                  # Proyek perencanaan lainnya
 │
-├── execution/               # Folder pengerjaan
-│   ├── roads-bridges/       # Pelaksanaan pembangunan jalan & jembatan
-│   ├── data-center/         # Pelaksanaan pembangunan data center
+├── execution/               # Pengerjaan proyek
+│   ├── roads-bridges/       # Pelaksanaan jalan & jembatan
+│   ├── data-center/         # Pelaksanaan data center
 │   ├── ecommerce/           # Pelaksanaan e-commerce
 │   └── ...                  # Proyek pengerjaan lainnya
 │
 ├── docs/                    # Dokumentasi umum
 │   ├── audit/               # Laporan audit & transparansi
 │   ├── roadmap/             # Roadmap visual & infografis
-│   └── brand/               # Brand guidelines & template
+│   └── governance/          # Code of Conduct, Security, Governance Policy
 │
 └── scripts/                 # Dashboard & utilitas
-
-
 
 
 ---
