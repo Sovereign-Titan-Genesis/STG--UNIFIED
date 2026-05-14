@@ -30,3 +30,38 @@ STG-Project/
 │
 └── scripts/                 # Dashboard & utilitas
 
+
+
+
+---
+
+## 🚀 Tujuan Monorepo
+- **[Integrasi penuh](ca://s?q=Integrasi_monorepo_STG_Project)**: semua proyek perencanaan dan pengerjaan ada dalam satu repositori.  
+- **[Transparansi](ca://s?q=Transparansi_monorepo_STG_Project)**: investor, komunitas, dan regulator bisa melihat progres nyata.  
+- **[Efisiensi](ca://s?q=Efisiensi_monorepo_STG_Project)**: mudah mengatur dependensi, CI/CD, dan dokumentasi.  
+- **[Kolaborasi](ca://s?q=Kolaborasi_monorepo_STG_Project)**: komunitas bisa berkontribusi langsung ke proyek perencanaan maupun pengerjaan.  
+
+---
+
+## 📊 Roadmap Publik
+- **Batch 01 (Core)**: Operasional penuh  
+- **Batch 02 (Financial)**: Audit selesai, siap listing  
+- **Batch 03 (Services)**: Sinkronisasi Bio‑Store  
+
+---
+
+## 🛡️ Sertifikat Kepercayaan
+Laporan audit Unit 008 (Rp 1.498 T agunan) tersedia di folder `docs/audit/`.  
+Ini menjadi bukti transparansi dan kekuatan finansial STG‑Chain.
+
+---
+
+## 🌐 Kontribusi Komunitas
+- Fork repositori ini  
+- Tambahkan ide atau perencanaan proyek baru di folder `planning/`  
+- Ajukan pull request untuk kontribusi pengerjaan di folder `execution/`  
+
+---
+
+## 📜 Lisensi
+Proyek ini berjalan dengan semangat **Sovereign Titan Genesis**: transparan, meritokratis, dan berdaya saing global.
