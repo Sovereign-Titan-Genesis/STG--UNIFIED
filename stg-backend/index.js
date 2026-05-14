@@ -1,4 +1,4 @@
-// index.js
+why// index.js
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -29,3 +29,21 @@ app.get("/balance/:address", async (req, res) => {
 });
 
 app.listen(5000, () => console.log("STG Backend running on port 5000"));
+app.post("/register", async (req, res) => {
+  const { username, email, address } = req.body;
+  try {
+    const user = await pool.query(
+      "INSERT INTO users (username, email) VALUES ($1, $2) RETURNING id",
+      [username, email]
+    );
+    await pool.query(
+      "INSERT INTO wallets (user_id, address) VALUES ($1, $2)",
+      [user.rows[0].id, address]
+    );
+    res.json({ message: "User registered", userId: user.rows[0].id });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Registration failed" });
+  }
+});
+
