@@ -1,9 +1,10 @@
-# STG-UNIFIED 
-人为人，人为一人
 
 # 🌐 Sovereign Titan Genesis - STG UNIFIED
 
-Selamat datang di monorepo **STG‑UNIFIED**.  
+## STG-UNIFIED 
+              人为人，人为一人
+
+####Selamat datang di monorepo **STG‑UNIFIED**.  
 Repositori ini menyatukan seluruh proyek perencanaan dan pengerjaan dalam satu kesatuan, sehingga mudah dikelola, transparan, dan terintegrasi.
 
 ---
