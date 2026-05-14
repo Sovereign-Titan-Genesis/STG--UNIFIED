@@ -1,0 +1,26 @@
+-- stg_schema.sql
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE wallets (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    address VARCHAR(100) UNIQUE NOT NULL,
+    balance NUMERIC(36, 18) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    tx_hash VARCHAR(100) UNIQUE NOT NULL,
+    from_address VARCHAR(100) NOT NULL,
+    to_address VARCHAR(100) NOT NULL,
+    amount NUMERIC(36, 18) NOT NULL,
+    status VARCHAR(20) DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
