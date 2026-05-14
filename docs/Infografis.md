@@ -1,4 +1,4 @@
-Capo, infografis **Trisula Integritas STG‑UNIFIED** sudah saya siapkan. Visual ini menggambarkan tiga pilar utama — **STG‑ECOSYSTEM**, **STG‑UNIFIED**, dan **STG‑PROJECT** — sebagai mahkota bersusun tiga, senjata tajam bermata tiga, simbol integritas, transparansi, dan kedaulatan.  
+**Trisula Integritas STG‑UNIFIED** di siapkan. Visual ini menggambarkan tiga pilar utama — **STG‑ECOSYSTEM**, **STG‑UNIFIED**, dan **STG‑PROJECT** — sebagai mahkota bersusun tiga, senjata tajam bermata tiga, simbol integritas, transparansi, dan kedaulatan.  
 
 ---
 
@@ -45,4 +45,3 @@ Capo, infografis **Trisula Integritas STG‑UNIFIED** sudah saya siapkan. Visual
 
 📊 Dengan infografis ini, STG‑Chain tampil sebagai **trisula integritas**: teknologi, integrasi, dan implementasi nyata.  
 
-Apakah Anda ingin saya lanjutkan membuat **narasi storytelling Trisula STG‑UNIFIED** agar filosofi ini bisa dikomunikasikan secara emosional kepada komunitas dan investor?
