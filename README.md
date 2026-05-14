@@ -10,28 +10,30 @@ Repositori ini menyatukan seluruh proyek perencanaan dan pengerjaan dalam satu k
 
 ## 📂 Struktur Direktori
 
-~/STG_UNIFIED/stg-project/
+ ~/STG_UNIFIED/
 │
-├── planning/                # Perencanaan proyek
-│   ├── roads-bridges/       # Perencanaan jalan & jembatan
-│   ├── data-center/         # Perencanaan data center
-│   ├── ecommerce/           # Perencanaan e-commerce
-│   └── ...                  # Proyek perencanaan lainnya
+├── STG-ECOSYSTEM/           # Fondasi teknis
+│   ├── blockchain/          # Smart contract & core chain
+│   ├── backend/             # API & server logic
+│   ├── frontend/            # UI/UX aplikasi
+│   ├── database/            # Penyimpanan & query data
+│   ├── docs/                # Dokumentasi teknis
+│   └── scripts/             # Automasi & CI/CD
 │
-├── execution/               # Pengerjaan proyek
-│   ├── roads-bridges/       # Pelaksanaan jalan & 
-jembatan
-│   ├── data-center/         # Pelaksanaan data center
-│   ├── ecommerce/           # Pelaksanaan e-commerce
-│   └── ...                  # Proyek pengerjaan lainnya
+├── STG-UNIFIED/             # Payung utama monorepo
+│   ├── planning/            # Perencanaan proyek
+│   ├── execution/           # Pengerjaan proyek
+│   ├── docs/                # Audit, roadmap, governance
+│   └── scripts/             # Dashboard & utilitas
 │
-├── docs/                    # Dokumentasi umum
-│   ├── audit/               # Laporan audit & transparansi
-│   ├── roadmap/             # Roadmap visual & infografis
-│   └── governance/          # Code of Conduct, Security, Governance Policy
-│
-└── scripts/                 # Dashboard & utilitas
----
+└── STG-PROJECT/             # Implementasi proyek nyata
+    ├── roads-bridges/       # Infrastruktur fisik
+    ├── data-center/         # Infrastruktur digital
+    ├── ecommerce/           # Ekonomi digital
+    └──...                  # Proyek lainnya
+
+
+ ---   
 
 ## 🎯 Tujuan Monorepo
 - **[Integrasi penuh](ca://s?q=Integrasi_monorepo_STG_UNIFIED)**: semua proyek perencanaan dan pengerjaan ada dalam satu repositori.  
