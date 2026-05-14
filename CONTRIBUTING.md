@@ -17,3 +17,10 @@ Kontribusi komunitas adalah kunci agar proyek ini tumbuh dan berkembang.
 1. **Fork repositori ini** ke akun GitHub Anda.
 2. **Buat branch baru** untuk kontribusi Anda:
 3. 
+
+---
+git checkout -b feature/nama-kontribusi
+---
+3. **Tambahkan file atau edit** sesuai folder yang relevan.
+4. **Commit perubahan** dengan pesan yang jelas:
+5. 
