@@ -1,0 +1,29 @@
+{
+  "system_nominal": "STG MONOREPO CORE ENGINE",
+  "version": "1.0.0-sovereign",
+  "architect": "Andi Muhammad Harpianto",
+  "isolation_mode": true,
+  "pilar_network": {
+    "pilar_01_core": {
+      "path": "./packages/metaportation-core",
+      "boundary": "pure-mathematics-and-topology",
+      "export_only": ["spatial_folding_coordinates", "origami_matrix"]
+    },
+    "pilar_02_curriculum": {
+      "path": "./packages/glbext-homeschooling",
+      "boundary": "educational-modules-365-days",
+      "dependency_injected": ["pilar_01_core.export_only"]
+    },
+    "pilar_03_media": {
+      "path": "./packages/malogazine-vitamin",
+      "boundary": "public-literacy-and-dark-science",
+      "dependency_injected": ["pilar_01_core.export_only", "pilar_02_curriculum.boundary"]
+    },
+    "pilar_04_event": {
+      "path": "./packages/stg-metaportation-event",
+      "boundary": "public-exhibition-and-lecture-deck",
+      "trigger_date": "2026-12-01"
+    }
+  },
+  "security_rule": "Strict-Decoupling: No pilar can access adjacent internal states directly without explicit export translation."
+}
