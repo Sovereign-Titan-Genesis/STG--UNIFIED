@@ -1,0 +1,41 @@
+cat << 'EOF' > ~/Sovereign-Titan-Genesis/docker-compose.yml
+version: '3.8'
+
+services:
+  stg-db:
+    image: postgres:15-alpine
+    container_name: stg-postgres-container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: stg_unified
+    ports:
+      - "5432:5432"
+    volumes:
+      - stg_postgres_data:/var/lib/postgresql/data
+    networks:
+      - stg-trisula-net
+
+  stg-backend:
+    build:
+      context: ./STG-ECOSYSTEM/backend
+    container_name: stg-express-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@stg-db:5432/stg_unified
+      - CHAINSTACK_HTTP_ENDPOINT=https://chainstack.com
+      - CHAINSTACK_API_KEY=i7GWskB6.cf5aunZeiuLRqH8RCtYd56A9wxPkAKSW
+      - CHAINSTACK_NODE_ID=jolly-goldberg
+    depends_on:
+      - stg-db
+    networks:
+      - stg-trisula-net
+
+volumes:
+  stg_postgres_data:
+
+networks:
+  stg-trisula-net:
+    driver: bridge
+EOF
