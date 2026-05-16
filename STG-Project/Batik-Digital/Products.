@@ -1,5 +1,6 @@
 ## 📄 1. Varian Tradisional (metadata_tradisional.json)
 (metadata_tradisional.json)
+
   {
   "name": "BATIK DIGITAL — Tradisional #1",
   "description": "Batik digital reinterpretasi dari foto milik Andi Muhammad Harpianto. Motif bergaya Parang/Kawung dengan palet warna klasik cokelat-gold. Licensed under STG-PURE-MANDIRI LICENSE v1.0.",
@@ -22,6 +23,7 @@
 
 ## 📄 2. Varian Kontemporer 
   (metadata_kontemporer.json)
+
   {
   "name": "BATIK DIGITAL — Kontemporer #1",
   "description": "Batik digital modern hasil transformasi kreatif dari foto milik Andi Muhammad Harpianto. Memadukan estetika nusantara dengan elemen visual kontemporer. Licensed under STG-PURE-MANDIRI LICENSE v1.0.",
@@ -42,6 +44,7 @@
 
 ## 📄 3. VarVarianamless Pattern 
   (metadata_seamlessVarian)
+
   {
   "name": "BATIK DIGITAL — Seamless Pattern #1",
   "description": "Pola batik digital berulang (seamless) tanpa batas yang dirancang khusus untuk kebutuhan tekstil dan media digital dari foto milik Andi Muhammad Harpianto. Licensed under STG-PURE-MANDIRI LICENSE v1.0.",
