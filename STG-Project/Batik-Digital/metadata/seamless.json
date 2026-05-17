@@ -1,18 +1,17 @@
-  {
-  "name": "BATIK DIGITAL — Seamless Pattern #1",
-  "description": "Pola batik digital berulang (seamless) tanpa batas yang dirancang khusus untuk kebutuhan tekstil dan media digital dari foto milik Andi Muhammad Harpianto. Licensed under STG-PURE-MANDIRI LICENSE v1.0.",
-  "image": "ipfs://<CID_IMAGE_SEAMLESS>.png",
+json
+{
+  "name": "BATIK DIGITAL — CAT Seamless",
+  "description": "Pola berulang tanpa sambung dari huruf 'CAT' untuk tekstil digital; oranye-emas dengan gradient lembut; seamless tile untuk penggunaan latar dan tekstil.",
+  "image": "ipfs://<CID_SEAMLESS>.png",
   "creator": "ANDI MUHAMMAD HARPIANTO",
-  "original_hash": "sha256:<HASH_GAMBAR_SEAMLESS>",
+  "originalhash": "sha256:<HASHSEAMLESS>",
   "attributes": [
-    {"trait_type": "Style", "value": "Seamless Pattern"},
-    {"trait_type": "Palette", "value": "Repeat Texture"},
-    {"trait_type": "Edition", "value": "1/1"}
+    {"trait_type":"Style","value":"Seamless Repetition"},
+    {"trait_type":"Palette","value":"Oranye-Emas"},
+    {"trait_type":"Edition","value":"1/1"}
   ],
   "license": "STG-PURE-MANDIRI LICENSE v1.0",
-  "royalty": {
-    "recipient": "0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb",
-    "percentage": 10
-  }
-  }
-
+  "source_statement": "Generated with AI assistance; final artwork curated and owned by ANDI MUHAMMAD HARPIANTO.",
+  "royalty": {"recipient":"0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb","percentage":10}
+}
+`
