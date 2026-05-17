@@ -1,0 +1,152 @@
+{
+  "name": "BATIK DIGITAL — Kontemporer CAT #002",
+  "symbol": "STGBDK",
+  "collection": {
+    "name": "Sovereign Titan Genesis — Batik Digital Nusantara",
+    "series": "Kontemporer Kontemporer",
+    "edition": 2,
+    "total_supply": 1,
+    "category": "Contemporary Cultural NFT"
+  },
+
+  "description": "BATIK DIGITAL — Kontemporer CAT #002 adalah interpretasi kontemporer dari semangat visual Nusantara dalam bentuk pola digital futuristik. Karya ini memadukan repetisi geometris, simbol identitas digital, dan ritme visual modern yang terinspirasi dari filosofi batik sebagai bahasa budaya lintas zaman. Elemen tipografi berulang 'CAT' digunakan sebagai motif simbolik yang merepresentasikan konektivitas, komunitas, serta transformasi budaya menuju era digital terdesentralisasi. Koleksi ini merupakan bagian dari arsip budaya digital Sovereign Titan Genesis untuk membangun provenance kreatif Nusantara di blockchain.",
+
+  "image": "ipfs://bafybeif_cont_002_batik_kontemporer",
+  "animation_url": null,
+  "external_url": "https://stg-nusantara.xyz",
+  "background_color": "000000",
+
+  "creator": {
+    "name": "ANDI MUHAMMAD HARPIANTO",
+    "organization": "Sovereign Titan Genesis",
+    "role": "Founder & Digital Cultural Creator",
+    "wallet": "0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb"
+  },
+
+  "cultural_identity": {
+    "civilization": "Nusantara",
+    "country": "Indonesia",
+    "cultural_domain": "Batik Kontemporer Digital",
+    "cultural_type": "Neo Cultural Pattern",
+    "movement": "Cyber Ethnic Nusantara",
+    "inspiration": [
+      "Batik Nusantara",
+      "Geometri Simetris",
+      "Sistem Pola Digital",
+      "Tipografi Futuristik",
+      "Visual Teknologi Kontemporer"
+    ],
+    "philosophy": "Menghubungkan identitas budaya Nusantara dengan bahasa visual digital masa depan melalui pola simetris dan simbol repetitif modern.",
+    "preservation_mission": "Menciptakan arsip budaya digital kontemporer yang hidup, berkembang, dan dapat diwariskan lintas generasi."
+  },
+
+  "historical_context": {
+    "era": "Web3 Cultural Renaissance",
+    "origin_year": 2026,
+    "created_in": "Indonesia",
+    "historical_significance": "Koleksi ini merepresentasikan evolusi visual batik dari medium tradisional menuju identitas budaya digital modern berbasis blockchain."
+  },
+
+  "technical": {
+    "standard": "ERC-721",
+    "blockchain": "STG / EVM Compatible",
+    "storage": "IPFS",
+    "image_format": "PNG",
+    "resolution": "4096x4096",
+    "color_profile": "RGB 8-bit",
+    "visual_style": "Cyber Geometric Contemporary",
+    "dominant_colors": [
+      "Black",
+      "Silver",
+      "Electric Blue",
+      "White"
+    ],
+    "original_hash": "sha256:replace_with_real_hash",
+    "asset_type": "Digital Pattern Artwork"
+  },
+
+  "provenance": {
+    "source_statement": "Original digital contemporary batik artwork created by ANDI MUHAMMAD HARPIANTO.",
+    "authenticity": "Verified Genesis Contemporary Creation",
+    "provenance_type": "On-chain Cultural Archive",
+    "immutability_notice": "This metadata and its referenced media are intended to serve as permanent cultural and historical records."
+  },
+
+  "utility": {
+    "membership_access": true,
+    "cultural_archive_access": true,
+    "future_merchandise_access": true,
+    "community_governance": true,
+    "future_physical_print_access": true,
+    "digital_identity_utility": true
+  },
+
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Kontemporer Collection"
+    },
+    {
+      "trait_type": "Style",
+      "value": "Cyber Batik"
+    },
+    {
+      "trait_type": "Visual Theme",
+      "value": "Neo Nusantara"
+    },
+    {
+      "trait_type": "Pattern Type",
+      "value": "Geometric Repetition"
+    },
+    {
+      "trait_type": "Typography Motif",
+      "value": "CAT"
+    },
+    {
+      "trait_type": "Dominant Color",
+      "value": "Electric Blue"
+    },
+    {
+      "trait_type": "Symmetry",
+      "value": "Radial"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Genesis Contemporary"
+    },
+    {
+      "trait_type": "Archive Type",
+      "value": "Permanent Cultural Archive"
+    },
+    {
+      "trait_type": "Utility",
+      "value": "Digital Cultural Membership"
+    }
+  ],
+
+  "rights": {
+    "license": "STG-PURE-MANDIRI LICENSE v1.0",
+    "copyright_holder": "ANDI MUHAMMAD HARPIANTO",
+    "commercial_rights": "Restricted unless explicitly granted by creator.",
+    "ownership_notice": "Ownership of this NFT does not automatically transfer full intellectual property rights."
+  },
+
+  "royalty": {
+    "standard": "EIP-2981",
+    "recipient": "0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb",
+    "percentage": 10,
+    "purpose": "Creator sustainability and development of Nusantara digital cultural ecosystems."
+  },
+
+  "ecosystem": {
+    "project": "Sovereign Titan Genesis",
+    "vision": "Membangun kedaulatan budaya digital Nusantara melalui blockchain, provenance, dan ekonomi kreatif terdesentralisasi.",
+    "mission": [
+      "Melestarikan budaya Nusantara dalam bentuk digital",
+      "Membangun identitas budaya Web3",
+      "Memberdayakan kreator dan pengrajin",
+      "Menciptakan arsip budaya permanen berbasis blockchain",
+      "Menghubungkan seni tradisional dengan teknologi masa depan"
+    ]
+  }
+}
