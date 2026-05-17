@@ -1,0 +1,58 @@
+[
+  {
+    "name": "BATIK DIGITAL — CAT Tradisional",
+    "description": "Motif Parang-Kawung klasik yang menyusun huruf 'CAT' secara diagonal; palet cokelat, emas, dan krem; estetika batik Jawa tradisional.",
+    "image": "ipfs://<CID_TRADITIONAL>.png",
+    "creator": "ANDI MUHAMMAD HARPIANTO",
+    "original_hash": "sha256:<HASH_TRADITIONAL>",
+    "attributes": [
+      {"trait_type":"Style","value":"Parang-Kawung"},
+      {"trait_type":"Palette","value":"Cokelat-Emas"},
+      {"trait_type":"Edition","value":"1/4"}
+    ],
+    "license": "STG-PURE-MANDIRI LICENSE v1.0",
+    "royalty": {"recipient":"0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb","percentage":10}
+  },
+  {
+    "name": "BATIK DIGITAL — CAT Modernize",
+    "description": "Desain geometris minimalis; huruf 'CAT' disusun grid simetris dengan aksen biru-perak neon di latar hitam matte; nuansa futuristik.",
+    "image": "ipfs://<CID_MODERNIZE>.png",
+    "creator": "ANDI MUHAMMAD HARPIANTO",
+    "original_hash": "sha256:<HASH_MODERNIZE>",
+    "attributes": [
+      {"trait_type":"Style","value":"Geometris Futuristik"},
+      {"trait_type":"Palette","value":"Biru-Perak"},
+      {"trait_type":"Edition","value":"2/4"}
+    ],
+    "license": "STG-PURE-MANDIRI LICENSE v1.0",
+    "royalty": {"recipient":"0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb","percentage":10}
+  },
+  {
+    "name": "BATIK DIGITAL — CAT Seamless",
+    "description": "Pola berulang tanpa batas dari huruf 'CAT' untuk tekstil digital; oranye-emas dengan gradient lembut; cocok untuk latar atau tekstur.",
+    "image": "ipfs://<CID_SEAMLESS>.png",
+    "creator": "ANDI MUHAMMAD HARPIANTO",
+    "original_hash": "sha256:<HASH_SEAMLESS>",
+    "attributes": [
+      {"trait_type":"Style","value":"Seamless Repetition"},
+      {"trait_type":"Palette","value":"Oranye-Emas"},
+      {"trait_type":"Edition","value":"3/4"}
+    ],
+    "license": "STG-PURE-MANDIRI LICENSE v1.0",
+    "royalty": {"recipient":"0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb","percentage":10}
+  },
+  {
+    "name": "BATIK DIGITAL — CAT Kontemporer",
+    "description": "Versi kontemporer: abstrak geometris dengan motif 'CAT' berulang, palet teal-turquoise-silver, aksen glow, kedalaman 3D ringan; estetika modern dan artistik.",
+    "image": "ipfs://<CID_CONTEMPORARY>.png",
+    "creator": "ANDI MUHAMMAD HARPIANTO",
+    "original_hash": "sha256:<HASH_CONTEMPORARY>",
+    "attributes": [
+      {"trait_type":"Style","value":"Kontemporer Abstrak"},
+      {"trait_type":"Palette","value":"Teal-Turquoise-Silver"},
+      {"trait_type":"Edition","value":"4/4"}
+    ],
+    "license": "STG-PURE-MANDIRI LICENSE v1.0",
+    "royalty": {"recipient":"0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb","percentage":10}
+  }
+]
