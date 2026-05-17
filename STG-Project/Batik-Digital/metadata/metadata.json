@@ -9,7 +9,9 @@
     {"trait_type":"Style","value":"Original Batik Digital"},
     {"trait_type":"Palette","value":"Custom"}
   ],
-  "license": "All Rights Reserved",
+
+  "license": "STG-PURE-MANDIRI LICENSE v1.0",
+  
   "source_statement": "Original artwork by ANDI MUHAMMAD HARPIANTO",
   "royalty": {
     "recipient": "0x2F7DaC1dF7D50DF85650445D18FfffB1331463eb",
