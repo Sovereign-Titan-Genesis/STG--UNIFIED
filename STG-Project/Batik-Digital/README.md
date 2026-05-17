@@ -10,3 +10,14 @@ Batik-Digital/
 ├── provenance/
 │   └── provenance.txt
 └── README.md
+
+STG-Batik-Digital/
+│
+├── assets/
+├── master-tiff/
+├── metadata/
+├── provenance/
+├── licenses/
+├── references/
+├── textile-patterns/
+└── nft-ready/
