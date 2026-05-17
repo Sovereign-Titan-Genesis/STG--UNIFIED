@@ -21,3 +21,14 @@ STG-Batik-Digital/
 ├── references/
 ├── textile-patterns/
 └── nft-ready/
+
+
+NFT ecosystem
++
+digital textile archive
++
+cultural provenance registry
++
+fashion collaboration platform
++
+creative economy network
