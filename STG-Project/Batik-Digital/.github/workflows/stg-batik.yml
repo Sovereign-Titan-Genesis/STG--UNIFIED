@@ -1,0 +1,6 @@
+- name: Deploy Escrow Contract
+  run: npx hardhat run scripts/escrow.js --network polygon
+  env:
+    PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+    POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}
+    
