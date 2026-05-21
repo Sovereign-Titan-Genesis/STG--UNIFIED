@@ -1,0 +1,52 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "STG Unified Observability",
+    "panels": [
+      {
+        "id": 1,
+        "title": "STG-Chain Validator Health",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "stg_chain_validator_health",
+            "legendFormat": "Validator Status"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "STG-web3 Wallet Integration",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "stg_web3_wallet_success_rate",
+            "legendFormat": "Wallet Success %"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Bio-Server Liveness Detection",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "bio_server_liveness_accuracy",
+            "legendFormat": "Accuracy %"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Batik-Digital Minting Throughput",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "batik_digital_minting_rate",
+            "legendFormat": "NFTs per minute"
+          }
+        ]
+      }
+    ]
+  }
+}
