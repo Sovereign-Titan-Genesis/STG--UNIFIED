@@ -1,0 +1,96 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "STG Unified Alerts",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Validator Status (STG-Chain)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "stg_chain_validator_health"
+          }
+        ],
+        "options": {
+          "reduceOptions": { "calcs": ["last"] },
+          "colorMode": "value",
+          "graphMode": "none"
+        },
+        "thresholds": {
+          "mode": "absolute",
+          "steps": [
+            { "color": "red", "value": 0 },
+            { "color": "green", "value": 1 }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "NFT Minting (Batik-Digital)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "batik_digital_minting_rate"
+          }
+        ],
+        "options": {
+          "reduceOptions": { "calcs": ["last"] },
+          "colorMode": "value",
+          "graphMode": "none"
+        },
+        "thresholds": {
+          "mode": "absolute",
+          "steps": [
+            { "color": "red", "value": 0 },
+            { "color": "green", "value": 1 }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "title": "Liveness Detection (Bio-Server)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "bio_server_liveness_accuracy"
+          }
+        ],
+        "options": {
+          "reduceOptions": { "calcs": ["last"] },
+          "colorMode": "value",
+          "graphMode": "none"
+        },
+        "thresholds": {
+          "mode": "absolute",
+          "steps": [
+            { "color": "red", "value": 50 },
+            { "color": "green", "value": 90 }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "title": "Wallet Integration (STG-web3)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "stg_web3_wallet_success_rate"
+          }
+        ],
+        "options": {
+          "reduceOptions": { "calcs": ["last"] },
+          "colorMode": "value",
+          "graphMode": "none"
+        },
+        "thresholds": {
+          "mode": "absolute",
+          "steps": [
+            { "color": "red", "value": 70 },
+            { "color": "green", "value": 95 }
+          ]
+        }
+      }
+    ]
+  }
+}
