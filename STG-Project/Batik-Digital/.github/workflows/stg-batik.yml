@@ -1,6 +1,51 @@
-- name: Deploy Escrow Contract
-  run: npx hardhat run scripts/escrow.js --network polygon
-  env:
-    PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-    POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}
-    
+name: Batik Digital CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install
+      - run: npx hardhat run scripts/deploy.js --network polygon
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}
+
+  mint:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - uses: actions/checkout@v3
+      - run: npx hardhat run scripts/mint.js --network polygon
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}
+
+  list:
+    runs-on: ubuntu-latest
+    needs: mint
+    steps:
+      - uses: actions/checkout@v3
+      - run: node scripts/integrate-marketplace.js
+        env:
+          OPENSEA_API_KEY: ${{ secrets.OPENSEA_API_KEY }}
+          RARIBLE_API_KEY: ${{ secrets.RARIBLE_API_KEY }}
+
+  escrow:
+    runs-on: ubuntu-latest
+    needs: list
+    steps:
+      - uses: actions/checkout@v3
+      - run: npx hardhat run scripts/escrow.js --network polygon
+        env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}
+          
