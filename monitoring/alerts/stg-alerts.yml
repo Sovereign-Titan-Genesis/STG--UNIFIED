@@ -1,0 +1,22 @@
+groups:
+  - name: stg-alerts
+    interval: 30s
+    rules:
+      - alert: ValidatorDown
+        expr: stg_chain_validator_health == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Validator STG-Chain tidak aktif"
+          description: "Validator node tidak merespon selama lebih dari 1 menit."
+
+      - alert: MintingFailure
+        expr: batik_digital_minting_rate == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Minting NFT Batik Digital gagal"
+          description: "Tidak ada NFT yang berhasil dicetak dalam 2 menit terakhir."
+          
