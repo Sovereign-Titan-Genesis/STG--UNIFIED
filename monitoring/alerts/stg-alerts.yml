@@ -1,7 +1,34 @@
 groups:
-  - name: stg-alerts
+  - name: stg-system-alerts
     interval: 30s
     rules:
+      - alert: HighCPUUsage
+        expr: node_cpu_seconds_total{mode="user"} > 0.85
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "CPU usage tinggi"
+          description: "CPU usage melebihi 85% selama 2 menit."
+
+      - alert: HighMemoryUsage
+        expr: node_memory_Active_bytes / node_memory_MemTotal_bytes > 0.9
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Memory usage kritis"
+          description: "Memory usage melebihi 90% selama 2 menit."
+
+      - alert: RPCLatencyHigh
+        expr: stg_chain_rpc_latency_seconds > 1.0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "RPC latency tinggi"
+          description: "RPC latency melebihi 1 detik."
+
       - alert: ValidatorDown
         expr: stg_chain_validator_health == 0
         for: 1m
@@ -19,4 +46,22 @@ groups:
         annotations:
           summary: "Minting NFT Batik Digital gagal"
           description: "Tidak ada NFT yang berhasil dicetak dalam 2 menit terakhir."
+
+      - alert: LivenessAccuracyLow
+        expr: bio_server_liveness_accuracy < 80
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Akurasi liveness rendah"
+          description: "Akurasi liveness detection turun di bawah 80%."
+
+      - alert: WalletIntegrationFailure
+        expr: stg_web3_wallet_success_rate < 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Integrasi dompet gagal"
+          description: "Tingkat keberhasilan integrasi dompet turun di bawah 90%."
           
