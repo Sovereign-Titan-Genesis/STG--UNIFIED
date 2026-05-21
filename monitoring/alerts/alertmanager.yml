@@ -1,0 +1,13 @@
+receivers:
+  - name: 'telegram'
+    telegram_configs:
+      - bot_token: '<TELEGRAM_BOT_TOKEN>'
+        chat_id: '<TELEGRAM_CHAT_ID>'
+        message: '{{ .Annotations.summary }} - {{ .Annotations.description }}'
+
+route:
+  receiver: 'telegram'
+  group_wait: 10s
+  group_interval: 30s
+  repeat_interval: 1h
+  
