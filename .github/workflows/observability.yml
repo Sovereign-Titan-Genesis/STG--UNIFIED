@@ -1,0 +1,46 @@
+name: STG Unified Observability
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup-prometheus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Start Prometheus
+        run: |
+          docker-compose -f monitoring/prometheus-compose.yml up -d
+      - name: Verify Prometheus
+        run: curl -s http://localhost:9090/-/ready
+
+  setup-grafana:
+    runs-on: ubuntu-latest
+    needs: setup-prometheus
+    steps:
+      - uses: actions/checkout@v3
+      - name: Start Grafana
+        run: |
+          docker-compose -f monitoring/grafana-compose.yml up -d
+      - name: Import Dashboards
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d @monitoring/dashboards/stg-unified.json \
+          http://admin:${{ secrets.GRAFANA_ADMIN_PASSWORD }}@localhost:3000/api/dashboards/db
+
+  collect-metrics:
+    runs-on: ubuntu-latest
+    needs: setup-grafana
+    steps:
+      - uses: actions/checkout@v3
+      - name: Chain metrics
+        run: curl http://stg-chain:9100/metrics > monitoring/metrics/chain.prom
+      - name: Web3 metrics
+        run: curl http://stg-web3:9100/metrics > monitoring/metrics/web3.prom
+      - name: Bio-Server metrics
+        run: curl http://bio-server:9100/metrics > monitoring/metrics/bio.prom
+      - name: Batik-Digital metrics
+        run: curl http://batik-digital:9100/metrics > monitoring/metrics/batik.prom
+        
