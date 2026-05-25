@@ -10,7 +10,18 @@ Repositori ini menyatukan seluruh proyek perencanaan dan pengerjaan dalam satu k
 ---
 
 ## 📂 Struktur Direktori
-
+STG-Unified/
+├── contracts/
+├── governance/
+├── treasury/
+├── audits/
+├── docs/
+├── whitepaper/
+├── scripts/
+├── deployment/
+├── ip_registry/
+├── emergency/
+└── community/
  ~/STG_UNIFIED/
 │
 ├── STG-ECOSYSTEM/           # Fondasi teknis
