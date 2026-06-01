@@ -9,7 +9,9 @@ import pkg from "pg";
 // Jika Wallet_API_Endpoints masih menggunakan module.exports (CommonJS), 
 // Anda bisa mengimpornya seperti di bawah ini di lingkungan ES Modules Node.js
 import walletRoutes from "./Wallet_API_Endpoints.js";
-
+import walletRoutes from "./Wallet_API_Endpoints.js";
+// ...
+app.use("/api/v1/wallet", walletRoutes);
 dotenv.config();
 const { Pool } = pkg;
 const app = express();
