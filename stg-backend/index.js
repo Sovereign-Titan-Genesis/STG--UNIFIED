@@ -46,4 +46,49 @@ app.post("/register", async (req, res) => {
     res.status(500).json({ error: "Registration failed" });
   }
 });
+const express = require('express');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+require('dotenv').config();
 
+const walletRoutes = require('./Wallet_API_Endpoints');
+
+const app = express();
+
+// Security Headers untuk memblokir eksploitasi browser/vulnerability luar
+app.use(helmet());
+app.use(express.json());
+
+// Implementasi Rate Limiting sesuai spesifikasi .env
+const apiLimiter = rateLimit({
+    windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000,
+    max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100,
+    message: { error: "Terlalu banyak permintaan dari node ini. Akses ditangguhkan sementara." }
+});
+
+// Terapkan limiter ke seluruh rute API publik
+app.use('/api/', apiLimiter);
+
+// Registrasi Route Wallet & Konsensus
+app.use('/api/v1/wallet', walletRoutes);
+
+// Base Endpoint untuk Monitor Kesehatan Node (Terintegrasi ke Metabase/Elastic)
+app.get('/api/v1/health', (req, res) => {
+    res.status(200).json({
+        status: "OPERATIONAL",
+        node_identity: process.env.NODE_IDENTITY,
+        timestamp: new Date().toISOString(),
+        consensus_state: "SYNCED"
+    });
+});
+
+// Global Error Handler untuk mencegah kebocoran stack trace ke publik
+app.use((err, req, res, next) => {
+    console.error(`[ERROR] [${new Date().toISOString()}]`, err.message);
+    res.status(500).json({ error: "Terjadi kesalahan internal pada jaringan STG." });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`[STG INTERFACE] Jaringan aktif pada port ${PORT} di bawah otoritas ${process.env.NODE_IDENTITY}`);
+});
