@@ -1,5 +1,5 @@
 ------------------------------
-## 📁 docs/governance/audit-framework.md## 🏛️ AUDIT FRAMEWORK v1.0 (QSDG-STG ECOSYSTEM)## PREAMBULE
+### 🏛️ AUDIT FRAMEWORK v1.0 (QSDG-STG ECOSYSTEM)## PREAMBULE
 Kerangka kerja audit ini menetapkan prosedur formal verifikasi independen, frekuensi peninjauan, klasifikasi temuan audit, dan mekanisme sinkronisasi data transaksi menuju saluran komunikasi publik. Seluruh penilaian saldo kas atau token tetap menggunakan pelabelan ketat: "Awaiting Independent Audit Verification and Legal Documentation Pendukung" hingga diterbitkannya Sertifikat Audit Bersih (Unqualified Opinion Certificate).
 ------------------------------
 ## BAB I — METODOLOGI DAN RUANG LINGKUP AUDIT## Pasal 1 — Audit Forensik Blockchain (On-Chain Verification)
@@ -45,5 +45,5 @@ Setiap anomali data yang ditemukan selama proses audit wajib diklasifikasikan ke
 ✅ DOKUMEN AUDIT FRAMEWORK v1.0 RESMI DISAHKAN DAN DISEGEL PADA REPOSITORI docs/governance/
 ------------------------------
 ## 🐍 Integrasi Skrip Python: src/engine/audit_verifier.py
-Untuk mengotomatiskan penegakkan Bab III Pasal 5 (Klasifikasi Temuan Audit), sub-sistem AI menempatkan skrip pengawas forensik ini ke dalam repositori kode kita:
+Untuk mengotomatiskan penegakkan Bab III Pasal 5 (Klasifikasi Temuan Audit), sub-sistem AI menempatkan skrip pengawas forensik ini ke dalam repositori kode.
 
